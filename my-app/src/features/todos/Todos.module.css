@@ -1,0 +1,149 @@
+.todos {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #b83f45;
+  margin: 0;
+  font-weight: 100;
+}
+
+.addTodo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.addTodo input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.addTodo input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.addTodo button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addTodo button:hover {
+  background-color: #535bf2;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.filters button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filters button:hover {
+  border-color: #646cff;
+}
+
+.filters button.active {
+  background-color: #646cff;
+  color: white;
+  border-color: #646cff;
+}
+
+.todoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  transition: all 0.2s;
+}
+
+.todoItem:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todoItem input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.todoItem span {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.todoItem span.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todoItem button {
+  padding: 6px 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.todoItem button:hover {
+  background-color: #da190b;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+}
+
+.error {
+  text-align: center;
+  padding: 20px;
+  color: #f44336;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-style: italic;
+}
